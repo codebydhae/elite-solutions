@@ -1,0 +1,85 @@
+/* Global styles for all screen sizes */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container with padding */
+  .container {
+    padding: 16px;
+    background-color: white;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  
+  /* Heading styles */
+  h1 {
+    font-family: forum, Garamond, serif;
+    font-size: 5rem;
+    font-weight: 100;
+    font-weight: lighter;
+    letter-spacing: .15rem; 
+    color: #333;
+  }
+  
+  /* Default styles for mobile-first design */
+  p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  /* 1. Small Screen (Mobile) Media Query: max-width 767px */
+  
+  /* This applies to devices with a width of 767px or less, typically smartphones */
+  @media (max-width: 767px) {
+    .container {
+      padding: 12px;  /* Slightly less padding for mobile */
+      background-color: #fff0f0;  /* Change background color for mobile */
+    }
+  
+    h1 {
+      font-size: 20px;  /* Smaller font size on mobile */
+    }
+  
+    p {
+      font-size: 12px;  /* Smaller font size for mobile text */
+    }
+  }
+  
+  /* 2. Large Screen Media Query: min-width 768px */
+  
+  /* This applies to devices with a width of 768px or more, typically tablets and up */
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;  /* Limit max width for larger screens */
+      padding: 24px;  /* More padding for larger screens */
+    }
+  
+    h1 {
+      font-size: 30px;  /* Larger font size for headings */
+    }
+  
+    p {
+      font-size: 16px;  /* Larger font size for text */
+    }
+  }
+  
+  /* 3. Extra Large Screen Media Query: min-width 1200px */
+  
+  /* This applies to large desktop screens with a width of 1200px or more */
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 960px;  /* Limit container size for large desktops */
+      padding: 32px;  /* More padding for even larger screens */
+    }
+  
+    h1 {
+      font-size: 36px;  /* Bigger font for large screens */
+    }
+  
+    p {
+      font-size: 18px;  /* Larger font size for better readability */
+    }
+  }
